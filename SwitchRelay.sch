@@ -60,14 +60,6 @@ Wire Wire Line
 Wire Wire Line
 	6750 3600 6750 3950
 Wire Wire Line
-	6750 3950 6350 3950
-Wire Wire Line
-	6350 3950 6350 3900
-Wire Wire Line
-	6450 3300 6450 3250
-Wire Wire Line
-	6450 3250 6900 3250
-Wire Wire Line
 	6900 3250 6900 3700
 Wire Wire Line
 	6900 3700 7000 3700
@@ -75,45 +67,6 @@ Wire Wire Line
 	7000 3500 6950 3500
 Wire Wire Line
 	6950 3500 6950 3200
-Wire Wire Line
-	6950 3200 6250 3200
-Wire Wire Line
-	6250 3200 6250 3300
-Text Label 5950 4150 1    50   ~ 0
-AUX-C
-Wire Wire Line
-	5950 4150 5950 3900
-Text Label 5850 3000 3    50   ~ 0
-AUX-R
-Text Label 6050 3000 3    50   ~ 0
-AUX-S
-Wire Wire Line
-	6050 3000 6050 3300
-Wire Wire Line
-	5850 3300 5850 3000
-$Comp
-L Connector_Generic:Conn_01x03 J4
-U 1 1 5D6A54C3
-P 7200 4300
-F 0 "J4" H 7150 4100 50  0000 L CNN
-F 1 "AUX" H 7300 4300 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 7200 4300 50  0001 C CNN
-F 3 "~" H 7200 4300 50  0001 C CNN
-	1    7200 4300
-	1    0    0    -1  
-$EndComp
-Text Label 6700 4300 0    50   ~ 0
-AUX-C
-Text Label 6700 4200 0    50   ~ 0
-AUX-R
-Text Label 6700 4400 0    50   ~ 0
-AUX-S
-Wire Wire Line
-	6700 4200 7000 4200
-Wire Wire Line
-	7000 4300 6700 4300
-Wire Wire Line
-	6700 4400 7000 4400
 $Comp
 L Device:R R1
 U 1 1 5D6A7AED
@@ -209,47 +162,11 @@ F 3 "~" H 10150 6200 50  0001 C CNN
 	1    10150 6200
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	7500 4050 7500 4550
-Wire Notes Line
-	7500 4550 6650 4550
-Wire Notes Line
-	6650 4550 6650 4050
-Wire Notes Line
-	6650 4050 7500 4050
-Text Notes 6650 4050 0    50   ~ 0
-Optional
-$Comp
-L septillion_relay:HFD2_xxx-x-L2 K1
-U 1 1 5D69AF73
-P 5950 3600
-F 0 "K1" H 6580 3646 50  0000 L CNN
-F 1 "HFD2_xxx-x-L2" H 5850 3450 50  0000 L CNN
-F 2 "septillion_relay:HFD2_xxx-x-L2" H 6500 3650 50  0001 C CNN
-F 3 "http://www.hongfa.com:8080/pdfjs/web/viewer.html?file=/Uploads/PDF/HFD2_en.pdf" H 5750 3600 50  0001 C CNN
-	1    5950 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5450 3300 5450 3150
-Wire Wire Line
-	5450 3150 5650 3150
-Wire Wire Line
-	5650 3150 5650 3300
-Wire Wire Line
-	5200 3150 5450 3150
+	5750 3150 5750 3300
 Connection ~ 5200 3150
-Connection ~ 5450 3150
 Wire Wire Line
 	4650 3700 4650 3950
-Wire Wire Line
-	4650 3950 5450 3950
-Wire Wire Line
-	5450 3950 5450 3900
-Wire Wire Line
-	5650 4000 5650 3900
-Wire Wire Line
-	4550 4000 5650 4000
 Wire Wire Line
 	4550 3400 4500 3400
 Connection ~ 4550 3900
@@ -271,4 +188,37 @@ Wire Wire Line
 Connection ~ 4600 3300
 Wire Wire Line
 	4800 3300 4800 3150
+Wire Wire Line
+	5200 3150 5750 3150
+Wire Wire Line
+	5850 4000 5850 3900
+Wire Wire Line
+	4550 4000 5850 4000
+Wire Wire Line
+	5650 3950 5650 3900
+Wire Wire Line
+	4650 3950 5650 3950
+Wire Wire Line
+	6050 3200 6050 3300
+Wire Wire Line
+	6050 3200 6950 3200
+Wire Wire Line
+	6250 3300 6250 3250
+Wire Wire Line
+	6250 3250 6900 3250
+Wire Wire Line
+	6150 3900 6150 3950
+Wire Wire Line
+	6150 3950 6750 3950
+$Comp
+L septillion_relay:RT314F12 K1
+U 1 1 5D6E170A
+P 5950 3600
+F 0 "K1" H 6380 3646 50  0000 L CNN
+F 1 "RT314F24" H 6380 3555 50  0000 L CNN
+F 2 "septillion_relay:RTxxxFxx" H 6500 3650 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=RT1_bistable&DocType=DS&DocLang=English" H 5950 3600 50  0001 C CNN
+	1    5950 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
