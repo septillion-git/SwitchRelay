@@ -191,14 +191,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 3150 5750 3150
 Wire Wire Line
-	5850 4000 5850 3900
-Wire Wire Line
-	4550 4000 5850 4000
-Wire Wire Line
-	5650 3950 5650 3900
-Wire Wire Line
-	4650 3950 5650 3950
-Wire Wire Line
 	6050 3200 6050 3300
 Wire Wire Line
 	6050 3200 6950 3200
@@ -215,10 +207,18 @@ L septillion_relay:RT314F12 K1
 U 1 1 5D6E170A
 P 5950 3600
 F 0 "K1" H 6380 3646 50  0000 L CNN
-F 1 "RT314F24" H 6380 3555 50  0000 L CNN
+F 1 "RT314Fxx" H 6380 3555 50  0000 L CNN
 F 2 "septillion_relay:RTxxxFxx" H 6500 3650 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=RT1_bistable&DocType=DS&DocLang=English" H 5950 3600 50  0001 C CNN
 	1    5950 3600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4650 3950 5850 3950
+Wire Wire Line
+	5850 3950 5850 3900
+Wire Wire Line
+	5650 3900 5650 4000
+Wire Wire Line
+	5650 4000 4550 4000
 $EndSCHEMATC

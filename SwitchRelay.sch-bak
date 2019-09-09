@@ -215,8 +215,8 @@ L septillion_relay:RT314F12 K1
 U 1 1 5D6E170A
 P 5950 3600
 F 0 "K1" H 6380 3646 50  0000 L CNN
-F 1 "RT314F12" H 6380 3555 50  0000 L CNN
-F 2 "" H 6500 3650 50  0001 C CNN
+F 1 "RT314Fxx" H 6380 3555 50  0000 L CNN
+F 2 "septillion_relay:RTxxxFxx" H 6500 3650 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=RT1_bistable&DocType=DS&DocLang=English" H 5950 3600 50  0001 C CNN
 	1    5950 3600
 	1    0    0    -1  
